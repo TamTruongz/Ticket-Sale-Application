@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #f9f6f4;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CALENDAR */
+.prev, .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.prev:hover, .next:hover {
+    background: #fc9722 !important;
+}
+
+.schoose-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.filter-days, .filter-week {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-days p, .filter-week p {
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #1E0D03;
+}
+
+.filter-days input[type="radio"], .filter-week input[type="radio"] {
+    width: 24px;
+    height: 24px;
+    background: #27AEF9;
+    border-color: #27AEF9;
+    ;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: center;
+}
+
+.weekdays div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FF8A00;
+}
+
+.calendar-modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px 32px;
+    z-index: 1;
+    border: none;
+    border-radius: 20px;
+    background: var(--w, #FFF);
+    box-shadow: 4px 4px 45px 0px rgba(109, 46, 0, 0.35);
+    width: 370px;
+}
+
+.calendar-modal .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-modal .header .prev,
+.calendar-modal .header .next {
+    cursor: pointer;
+}
+
+.calendar-modal .header h3 {
+    margin: 0;
+}
+
+.calendar-modal .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+}
+
+.calendar-modal .days div {
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-modal .days div.today {
+    background-color: #ffba7b;
+}
+
+.calendar-modal .days div.selected {
+    background-color: #fa7753;
+    color: white;
+}
+
+.calendar-modal .days div.prev-month,
+.calendar-modal .days div.next-month {
+    color: gray;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+table thead {
+    background: #F1F4F8;
+    color: #1E0D03;
+}
+
+
+.th-border-left {
+    border-radius: 12px 0px 0px 0px;
+}
+
+.th-border-right {
+    border-radius: 0px 12px 0px 0px;
+}
+
+tr {
+    height: 40px;
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    margin: 0;
+    padding: 0;
+    color: var(--text, #1E0D03);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 0 12px;
+}
+
+
+table tbody tr:last-child td:first-child {
+    border-radius: 0px 0px 0px 12px;
+}
+
+table tbody tr:last-child td:last-child {
+    border-radius: 0px 0px 12px 0px;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background: #fff;
+}
+
+table tbody tr:nth-of-type(even) {
+    background: #F7F8FB;
+}

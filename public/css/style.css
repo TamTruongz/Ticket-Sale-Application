@@ -1,0 +1,501 @@
+.logo {
+    padding: 17px 0 59px 33px;
+}
+
+.navbar-left {
+    width: 315px;
+}
+
+.list-menu {
+    padding: 0 33px;
+}
+
+.item-menu {
+    width: 230px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1E0D03;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 0 15px 24px;
+}
+
+.active-menu {
+    background: #FFB800;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    opacity: 1;
+
+}
+
+.item-menu i {
+    font-size: 25px;
+}
+
+.main-content {
+    width: 100%;
+    padding: 0px 25px 0 0;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.input-search {
+    width: 400px;
+    height: 45px;
+    background: #EDE6E6;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    padding: 0 55px 0 15px;
+}
+
+.bx-search {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #1E0D03;
+    font-size: 24px;
+}
+
+.input-search::placeholder {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1E0D03;
+    opacity: 0.3;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icon-mail, .icon-notifications {
+    font-size: 24px;
+    color: #1E0D03;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+/* CONTENT */
+main.content {
+    height: 700px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.title-content p {
+    font-weight: 700;
+    font-size: 33px;
+    color: #1E0D03;
+}
+
+.area-comment-calendar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    margin-bottom: 5px;
+}
+
+.comment-line {
+    font-weight: 600;
+    font-size: 18px;
+    color: #1E0D03;
+}
+
+.btn-calendar {
+    position: relative;
+    width: 155px;
+}
+
+.btn-calendar input {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 155px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E6E0E0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: #1E0D03;
+    opacity: 0.78;
+
+}
+
+.btn-calendar .icon-calendar {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+}
+
+.turnover {
+    margin: 20px 0;
+}
+
+.turnover .text-turnover {
+    font-weight: 500;
+    font-size: 14px;
+    color: #1E0D03;
+    opacity: 0.5;
+}
+
+.turnover .number-turnover {
+    display: flex;
+    gap: 2px;
+
+}
+
+.number-turnover p {
+    font-weight: 700;
+    font-size: 24px;
+    color: #1E0D03;
+}
+
+.number-turnover span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #1E0D03;
+    margin-top: 10px;
+}
+
+.chart-pie {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.area-calendar {
+    width: 400px;
+}
+
+.area-chart-pie {
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 250px;
+    height: 250px;
+}
+
+.area-color-text-comment {
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 35px;
+}
+
+.text-comment {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.text-comment div {
+    width: 44px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.rect-blue {
+    background: #4F75FF;
+}
+
+.rect-orange {
+    background: #FF8A48;
+}
+
+/* Page Manager Ticket */
+main.content-- {
+    height: 730px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.tools {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-search {
+    position: relative;
+    display: flex;
+}
+
+.search-ticket {
+    display: flex;
+    width: 400px;
+    height: 40px;
+    align-items: center;
+    padding: 0 10px;
+
+    color: var(--text, #1E0D03);
+    font-size: 16px;
+    font-style: italic;
+
+    border-radius: 8px;
+    background: #F7F7F8;
+    border: none;
+    outline: none;
+}
+
+.btn-search-ticket {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.btn-search-ticket i {
+    font-size: 28px;
+}
+
+.div-filter-down {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.div-filter-down button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #FF993C;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--yellow-1, #FF993C);
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+}
+
+.btn-filter {
+    width: 127px;
+}
+
+.btn-downfile {
+    width: 181px;
+}
+
+.btn-filter i {
+    font-size: 28px;
+}
+
+td {
+    position: relative;
+}
+
+tr:hover .menu-3dot {
+    display: block;
+}
+
+.menu-3dot {
+    display: none;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.menu-3dot i {
+    font-size: 24px;
+}
+
+/* pagination */
+.Pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.list-page {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.list-page li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.list-page li i {
+    color: #A5A8B1;
+}
+
+.list-page li:hover {
+    border: 1px solid var(--yellow-1, #ff7a3c);
+    color: #ff7a3c;
+}
+
+.list-page li:hover i {
+    color: #ff7a3c;
+}
+
+.active-pagin {
+    border: 1px solid var(--yellow-1, #FF993C);
+    color: #FF993C;
+}
+
+/* popup filter */
+.modal-content {
+    border-radius: 16px;
+    background: #FFF;
+    padding: 8px 12px;
+    width: 670px !important;
+    height: 454px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.heading-filter {
+    color: var(--text, #1E0D03);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.modal-body {
+    width: 634px !important;
+
+}
+
+.filter-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 70px;
+}
+
+.date-1 p, .date-2 p {
+    color: var(--text, #1E0D03);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    opacity: 0.6;
+}
+
+.area-filter-radio {
+    padding: 15px 0;
+}
+
+.area-filter-radio p, .area-filter-checkbox p {
+    color: var(--text, #1E0D03);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    opacity: 0.8;
+}
+
+.area-in-radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+
+.in-filter-radio, .in-filter-checkbox {
+    display: flex;
+    gap: 5px;
+}
+
+.in-filter-radio input[type="radio"] {
+    width: 24px;
+    height: 24px;
+}
+.area-in-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 20px;
+    padding: 5px 0;
+}
+.in-filter-checkbox {
+    width: 130px;
+}
+.in-filter-checkbox input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.in-filter-radio p {
+    color: var(--text, #1E0D03);
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btn-filter {
+    width: 160px;
+    height: 48px;
+    background: transparent;
+    color: var(--yellow-1, #FF993C);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    border-radius: 8px;
+    border: 1px solid var(--yellow-1, #FF993C);
+}
